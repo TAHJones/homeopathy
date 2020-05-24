@@ -1,0 +1,24 @@
+
+/* BANNER */
+
+.banner {
+    background-image: url(/assets/images/homeopathy_montage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
+
+/* .banner {
+    background-color: red;
+    width: 100%;
+} */
+
+.banner-inner {
+    background-image: url('/assets/images/homeopathy_montage.jpg');
+	/* background-color: rgba(34, 49, 63, 0.8); */
+    /* background-image: url('assets/images/homeopathy-montage.png'); */
+	/* padding: 8rem 0; */
+}
+
+/* BANNER-END */
