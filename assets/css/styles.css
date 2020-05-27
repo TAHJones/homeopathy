@@ -1,24 +1,88 @@
 
 /* BANNER */
 
-.banner {
-    background-image: url(/assets/images/homeopathy_montage.jpg);
+/* .banner {
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FFFAA2;
+    height: 200px;
+} */
+
+body {
+    background-color: #fffaa2;
+    background-image: url('../images/branches.jpg');
+	background-color: rgba(255, 255, 255, 0.2);    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: block;
+    background-attachment: fixed;
+    /* height: 400px; */
+    /* width: 100%; */
+    /* display: block; */
+    /* margin: 0 auto; */
 }
 
-/* .banner {
-    background-color: red;
-    width: 100%;
+/* body {
+    background-color: #FFFAA2;
 } */
 
-.banner-inner {
-    background-image: url('/assets/images/homeopathy_montage.jpg');
-	/* background-color: rgba(34, 49, 63, 0.8); */
-    /* background-image: url('assets/images/homeopathy-montage.png'); */
-	/* padding: 8rem 0; */
+section {
+    margin: 50px 0;
+    background-color: #fffaa2;
 }
 
-/* BANNER-END */
+h1, h2 {
+    color: #0aaa2d;
+    font-weight: 600px;
+    margin-bottom: 20px;
+}
+
+.dark-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 10px solid #0aaa2d;
+    border-radius: 6px;
+    box-shadow: 5px 5px 20px 2px #000;
+    padding: 20px 40px;
+}
+
+.dark > h2 {
+    color: #ffcd37;
+    font-weight: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dark > p {
+    color: #fffaa2;
+    font-weight: 400;
+}
+
+.dark > p > span {
+    color: #7dab4b;
+    font-weight: 600;
+}
+
+.benefits > ul > li {
+    font-size: 20px;
+    font-weight: 900;
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.benefits > ul > li:nth-of-type(1) {
+    color: #ae3d88;
+}
+
+.benefits > ul > li:nth-of-type(2) {
+    color: #f8585d;
+}
+
+.benefits > ul > li:nth-of-type(3) {
+    color: #e6ea74;
+}
+
+.benefits > ul > li:nth-of-type(4) {
+    color: #7fb0d7;
+}
