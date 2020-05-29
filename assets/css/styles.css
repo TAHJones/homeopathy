@@ -1,24 +1,12 @@
 
 /* BANNER */
 
-/* .banner {
-    background-image: url('../images/logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #FFFAA2;
-    height: 200px;
-} */
-
 body {
-    background-image: url('../images/branches2.jpg');
+    background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    /* height: 400px; */
-    /* width: 100%; */
-    /* display: block; */
-    /* margin: 0 auto; */
 }
 
 header {
@@ -27,11 +15,19 @@ header {
 
 section {
     padding: 60px 0;
-    background-color: #fffaa2;
+    background-color: rgba(237, 250, 162, 0.9);
 }
 
+h1 {
+    color: #ffcd37;
+    font-size: 30px;
+    font-weight: 900px;
+    margin-bottom: 60px;
+    text-align: center;
+ 
+}
 
-h1, h2 {
+h2 {
     color: #0aaa2d;
     font-weight: 600px;
     margin-bottom: 20px;
@@ -39,28 +35,53 @@ h1, h2 {
 
 p {
     font-size: 16px;
+    text-align: justify;
 }
 
 ul {
     padding: 0;
 }
 
-/* .page {
-    background-color: rgba(255, 255, 255, 0.2);
+/* .logo {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 } */
 
-.banner > img {
+/* .logo-bg {
+    margin: 0;
+    padding: 0;
+} */
+
+.banner-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 60px 0;
+}
+
+/* .banner {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 90%;
+    border: 8px solid #7dab4b;
+    border-radius: 6px;
+    box-shadow: 5px 5px 20px 2px #000;
+    padding: 20px 20px;
+} */
+
+.banner > img, .logo > img {
     display: block;
-    margin: 5px auto;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.banner > img {
     width: 100%;
 }
 
 .dark-bg {
-    background-color: rgba(3, 58, 21, 0.5);
-    /* border: 10px solid #0aaa2d; */
-    /* border-radius: 6px; */
-    /* box-shadow: 5px 5px 20px 2px #000; */
-    /* padding: 100px 40px; */
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .dark {
