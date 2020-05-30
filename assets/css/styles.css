@@ -9,10 +9,6 @@ body {
     background-attachment: fixed;
 }
 
-header {
-    background-color: #fffaa2;
-}
-
 section {
     padding: 60px 0;
     background-color: rgba(237, 250, 162, 0.9);
@@ -54,6 +50,33 @@ ul {
     margin: 0;
     padding: 0;
 } */
+
+
+a {
+	color: #eae58e;
+	text-decoration: none;
+	/* background-color: transparent; */
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+a:hover {
+	color: #ffcd37;
+}
+
+.logo-bg {
+	background-color: #fffaa2;
+	margin-top: 49px;
+}
+
+.navbar {
+	background-color: #2b532a !important
+}
+
+.navbar-toggler {
+	color: rgba(255,255,255,.5);
+	border-color: rgba(255,255,255,.1);
+}
 
 .banner-bg {
     background-color: rgba(0, 0, 0, 0.5);
