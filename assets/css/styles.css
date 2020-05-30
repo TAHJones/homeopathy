@@ -101,18 +101,18 @@ ul {
     text-align: center;
 }
 
-.dark > p {
+/* .dark > p {
     color: #fffaa2;
     font-size: 24px;
     font-style: italic;
     font-weight: 400;
-}
+} */
 
-.dark > p > span {
+/* .dark > p > span {
     color: #7dab4b;
     font-style: normal;
     font-weight: 900;
-}
+} */
 
 .benefits > ul > li {
     font-size: 20px;
@@ -138,3 +138,14 @@ ul {
     color: #7fb0d7;
     margin-bottom: 0;
 }
+
+/* TESTIMONIALS */
+
+.carousel-item > p {
+    color: #fffaa2;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* TESTIMONIALS-END */
