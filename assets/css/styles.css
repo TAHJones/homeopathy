@@ -142,10 +142,38 @@ ul {
 /* TESTIMONIALS */
 
 .carousel-item > p {
-    color: #fffaa2;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 400;
+	color: #fffaa2;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 400;
+	width: 75%;
+	display: block;
+	margin: 0 auto;
+}
+
+.carousel-indicators {
+	/* position: absolute; */
+	/* right: 0; */
+	/* bottom: 0px; */
+	/* left: 0; */
+	/* z-index: 15; */
+	/* display: -ms-flexbox; */
+	/* display: flex; */
+	/* -ms-flex-pack: center; */
+	/* justify-content: center; */
+	/* padding-left: 0; */
+	/* margin-right: 15%; */
+	/* margin-left: 15%; */
+	/* list-style: none; */
+	bottom: -25%;
+}
+
+.carousel-control-prev {
+	left: -50px;
+}
+
+.carousel-control-next {
+	right: -50px;
 }
 
 /* TESTIMONIALS-END */
