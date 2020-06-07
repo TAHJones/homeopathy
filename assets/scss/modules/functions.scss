@@ -16,7 +16,7 @@ $rem-base: 16px;
   @return $number;
 }
 
-/* rem-calc function taken from zurb-foundation framework */
+// convert-to-rem & rem-calc functions taken from zurb-foundation framework
 
 // CONVERT TO REM
 @function convert-to-rem($value, $base-value: $rem-base) {
