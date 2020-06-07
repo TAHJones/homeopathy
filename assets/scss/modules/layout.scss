@@ -3,10 +3,16 @@
 @use "variables" as v;
 @use "functions" as f;
 @use "mixins" as m;
+@use "media_queries" as q;
+
+/* LAYOUT */
 
 .logo-bg {
 	background-color: v.$tertiary-bg-color;
-	margin-top: rem-calc(120);
+	margin-top: f.rem-calc(55);
+    @include q.respond-above(xs) {
+	    margin-top: f.rem-calc(120);
+    }
 }
 
 .banner-bg {
@@ -40,3 +46,9 @@
     margin-bottom: 40px;
     text-align: center;
 }
+
+.colored-list {
+    @include m.list-color(v.$list-color-magenta, v.$list-color-red, v.$list-color-yellow, v.$list-color-blue);
+}
+
+/* LAYOUT-END */
