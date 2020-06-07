@@ -1,0 +1,57 @@
+// modules/_general.scss
+
+@use "variables" as v;
+@use "functions" as f;
+
+html {
+    font-size: f.$rem-base;
+}
+
+body {
+    background-image: url('../images/branches.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    padding: f.rem-calc(60 0);
+    background-color: v.$primary-bg-color;
+}
+
+h1 {
+    color: v.$primary-header-color;
+    font-size: f.rem-calc(30);
+    font-weight: 600;
+    margin-bottom: f.rem-calc(60);
+    text-align: center;
+ 
+}
+
+h2 {
+    color: v.$secondary-header-color;
+    font-weight: 600;
+    margin-bottom: f.rem-calc(20);
+}
+
+p {
+    color: v.$primary-font-color;
+    font-size: f.rem-calc(16);
+    text-align: justify;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+	color: v.$primary-link-color;
+	text-decoration: none;
+	font-size: f.rem-calc(16);
+	margin-right: f.rem-calc(10);
+}
+
+a:hover {
+	color: v.$primary-link-color-hover;
+}

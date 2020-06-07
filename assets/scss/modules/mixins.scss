@@ -1,0 +1,12 @@
+// modules/_mixins.scss
+
+// @use "variables" as v;
+@use "functions" as f;
+
+
+@mixin poster($bg-color, $border-color) {
+    background-color: $bg-color;
+    border: f.rem-calc(8) solid $border-color;
+    border-radius: f.rem-calc(6);
+    box-shadow: f.rem-calc(5 5 20 2) #000;
+}

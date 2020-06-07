@@ -1,0 +1,42 @@
+// modules/_layout.scss
+
+@use "variables" as v;
+@use "functions" as f;
+@use "mixins" as m;
+
+.logo-bg {
+	background-color: v.$tertiary-bg-color;
+	margin-top: rem-calc(120);
+}
+
+.banner-bg {
+    background-color: v.$banner-bg-color;
+    padding: f.rem-calc(60 0);
+}
+
+.banner > img, .logo > img {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.banner > img {
+    width: 98%;
+}
+
+.dark-bg {
+    background-color: v.$secondary-bg-color;
+}
+
+.dark {
+    @include m.poster(v.$poster-bg-color, v.$primary-border-color);
+    padding: f.rem-calc(60 40);
+}
+
+.dark > h2 {
+    color: v.$tertiary-header-color;
+    font-weight: 600px;
+    margin-bottom: 40px;
+    text-align: center;
+}
