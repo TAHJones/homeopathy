@@ -1,0 +1,31 @@
+// modules/_components.scss
+
+@use "variables" as v;
+@use "functions" as f;
+// @use "mixins" as m;
+
+/* CAROUSEL */
+
+.carousel-item > p {
+	color: v.$carousel-font-color;
+	font-size: f.rem-calc(20);
+	font-style: italic;
+	font-weight: 400;
+	width: 85%;
+	display: block;
+	margin: 0 auto;
+}
+
+.carousel-indicators {
+	bottom: -25%;
+}
+
+.carousel-control-prev {
+	left: -50px;
+}
+
+.carousel-control-next {
+	right: -50px;
+}
+
+/* CAROUSEL-END */
