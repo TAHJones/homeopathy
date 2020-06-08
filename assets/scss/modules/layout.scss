@@ -35,6 +35,15 @@
     background-color: v.$secondary-bg-color;
 }
 
+// .dark-bg.colored-list {
+.dark-bg {
+    background-color: v.$poster-bg-color;
+    text-shadow: 2px 2px #000;
+    @include q.respond-above(xs) {
+        background-color: v.$secondary-bg-color;
+    }
+}
+
 .dark {
     @include m.poster(v.$poster-bg-color, v.$primary-border-color);
     padding: f.rem-calc(60 40);
