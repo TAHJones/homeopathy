@@ -28,7 +28,10 @@
 }
 
 .banner > img {
+    width: 95%;
+    @include q.respond-above(xs) {
     width: 98%;
+    }
 }
 
 .dark-bg {
@@ -45,13 +48,15 @@
 
 .dark {
     @include m.poster(v.$poster-bg-color, v.$primary-border-color);
-    padding: f.rem-calc(60 40);
+    padding: f.rem-calc(20 30 0);
+    @include q.respond-above(xs) {
+        padding: f.rem-calc(60 40);
+    }
 }
 
 .dark > h2 {
     color: v.$tertiary-header-color;
     font-weight: 600px;
-    margin-bottom: f.rem-calc(50);
     text-align: center;
 }
 
@@ -60,6 +65,10 @@
     @include q.respond-above(xs) {
         @include m.list-color(v.$list-color-magenta, v.$list-color-red, v.$list-color-yellow, v.$list-color-blue);
     }
+}
+
+.colored-list > h2 {
+    margin-bottom: f.rem-calc(50);
 }
 
 /* LAYOUT-END */
