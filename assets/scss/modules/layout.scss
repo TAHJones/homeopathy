@@ -52,7 +52,7 @@
 .dark > h2 {
     color: v.$tertiary-header-color;
     font-weight: 600px;
-    margin-bottom: 40px;
+    margin-bottom: f.rem-calc(50);
     text-align: center;
 }
 
