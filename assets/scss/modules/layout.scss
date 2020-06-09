@@ -35,7 +35,6 @@
     background-color: v.$secondary-bg-color;
 }
 
-// .dark-bg.colored-list {
 .dark-bg {
     background-color: v.$poster-bg-color;
     text-shadow: 2px 2px #000;
@@ -57,7 +56,10 @@
 }
 
 .colored-list {
-    @include m.list-color(v.$list-color-magenta, v.$list-color-red, v.$list-color-yellow, v.$list-color-blue);
+    @include m.list-color(v.$list-color-magenta--light, v.$list-color-red, v.$list-color-yellow, v.$list-color-blue);
+    @include q.respond-above(xs) {
+        @include m.list-color(v.$list-color-magenta, v.$list-color-red, v.$list-color-yellow, v.$list-color-blue);
+    }
 }
 
 /* LAYOUT-END */
