@@ -16,5 +16,22 @@ function responsiveTitle(pageWidth) {
     }
 }
 
-responsiveTitle(xs);
+
+/**
+ * Function that uses js date method to get current year and adds it to copyright statement then inserts them into page footer.
+ */
+function getCurrentYear() {
+  let copyRightText;
+  let currentTime = new Date();
+  let year = currentTime.getFullYear();
+    copyRightText = "2019 - " + year + " © Thomas Jones - All Rights Reserved";
+    return copyRightText;
+}
+
+
+// eventlisteners
 xs.addListener(responsiveTitle);
+
+// function calls
+document.addEventListener("DOMContentLoaded", responsiveTitle(xs), false);
+copyRight.innerHTML = getCurrentYear();
