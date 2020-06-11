@@ -1,4 +1,7 @@
-let xs = window.matchMedia("(min-width: 576px)")
+const xs = window.matchMedia("(min-width: 576px)")
+const backToTop = document.getElementById("backToTop");
+const copyRight = document.getElementById("copyRight");
+
 
 /**
  * Function that uses matchMedia method. It toggles h2 text content if the current window width matches the CSS media query string parameter or not.
@@ -29,9 +32,54 @@ function getCurrentYear() {
 }
 
 
+/**
+ *  CREDIT: code for scrolling button taken from
+ *  https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
+ * makes floating button visible once user starts scrolling.
+ */
+function scrollingButton() {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        backToTop.classList.add("active");
+    } else {
+        backToTop.classList.remove("active");
+    }
+}
+
+
+/**
+ * topFunction function scrolls back to the top of the page
+ */
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+/**
+ * floatButton function fixes floating button in place on screens larger than 1200px
+ * It also unfixes floating button on screens smaller than 1200px
+ */
+function floatButton() {
+    if (window.innerWidth < 576) {
+        backToTop.classList.replace("btn-float", "btn-fixed");
+        backToTop.classList.add("active");
+
+    } else {
+        backToTop.classList.replace("btn-fixed", "btn-float");
+    }
+}
+
+
 // eventlisteners
 xs.addListener(responsiveTitle);
+window.addEventListener("scroll", scrollingButton, false);
+backToTop.addEventListener("click", topFunction, false);
+window.addEventListener("resize", floatButton, false);
+
 
 // function calls
-document.addEventListener("DOMContentLoaded", responsiveTitle(xs), false);
-copyRight.innerHTML = getCurrentYear();
+document.addEventListener("DOMContentLoaded", function() {
+    responsiveTitle(xs);
+    floatButton();
+    copyRight.innerHTML = getCurrentYear();
+}, false);
