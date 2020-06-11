@@ -44,8 +44,11 @@ h1 {
 h2 {
     color: v.$secondary-header-color;
     font-weight: 600;
-    font-size: f.rem-calc(v.$h2-font-size-xsmall);
+    font-size: f.rem-calc(v.$h2-font-size-xxsmall);
     margin-bottom: f.rem-calc(20);
+    @include q.respond-above(xxs) {
+        font-size: f.rem-calc(v.$h2-font-size-xsmall);
+    }
     @include q.respond-above(sm) {
         font-size: f.rem-calc(v.$h2-font-size-small);
     }
