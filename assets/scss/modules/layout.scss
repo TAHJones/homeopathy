@@ -71,4 +71,19 @@
     margin-bottom: f.rem-calc(50);
 }
 
+footer {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 2rem 0 2rem;
+}
+
+.footer-copyright {
+    color: #d9b034;
+	text-align: center;
+	text-shadow: 2px 2px #000;
+}
+
+.footer-nav {
+	height: 0;
+}
+
 /* LAYOUT-END */
