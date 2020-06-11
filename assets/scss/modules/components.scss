@@ -72,7 +72,7 @@
 	left: 1.5rem;
 	z-index: 1;
 	cursor: pointer;
-	color: #ffcd37;
+	color: #e3b72f;
 	opacity: 0;
 	background-color: transparent;
 	transition: all .25s ease-in-out;
@@ -80,7 +80,7 @@
 
 #backToTop.active {
 	pointer-events: auto;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 #backToTop.active:hover {
