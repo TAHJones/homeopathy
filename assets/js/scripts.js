@@ -1,6 +1,6 @@
 const xs = window.matchMedia("(min-width: 576px)")
 const backToTop = document.getElementById("backToTop");
-const copyRight = document.getElementById("copyRight");
+
 
 
 /**
@@ -21,14 +21,20 @@ function responsiveTitle(pageWidth) {
 
 
 /**
- * Function that uses js date method to get current year and adds it to copyright statement then inserts them into page footer.
- */
-function getCurrentYear() {
-  let copyRightText;
-  let currentTime = new Date();
-  let year = currentTime.getFullYear();
-    copyRightText = "2019 - " + year + " © Thomas Jones - All Rights Reserved";
-    return copyRightText;
+ * Function that uses js date method to get current year and adds it to copyright statement then inserts them into page footer. Uses matchMedia query as parameter to make copyright statement responsve
+* @param {string} pageWidth - - MediaQueryList object representing the results of the specified CSS media query string.
+*/
+function getCurrentYear(pageWidth) {
+    const copyRight = document.getElementById("copyRight");
+    let copyRightText;
+    let currentTime = new Date();
+    let year = currentTime.getFullYear();
+    if (pageWidth.matches) {
+        copyRightText = "2011 - " + year + " © Thomas Jones - All Rights Reserved";
+    } else {
+        copyRightText = "2011 - " + year + " © Thomas Jones";
+    }
+    copyRight.innerHTML = copyRightText;
 }
 
 
@@ -72,6 +78,7 @@ function floatButton() {
 
 // eventlisteners
 xs.addListener(responsiveTitle);
+xs.addListener(getCurrentYear);
 window.addEventListener("scroll", scrollingButton, false);
 backToTop.addEventListener("click", topFunction, false);
 window.addEventListener("resize", floatButton, false);
@@ -81,5 +88,5 @@ window.addEventListener("resize", floatButton, false);
 document.addEventListener("DOMContentLoaded", function() {
     responsiveTitle(xs);
     floatButton();
-    copyRight.innerHTML = getCurrentYear();
+    getCurrentYear(xs);
 }, false);
