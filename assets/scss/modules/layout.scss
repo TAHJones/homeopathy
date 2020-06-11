@@ -82,6 +82,22 @@ footer {
 	text-shadow: 2px 2px #000;
 }
 
+#copyRight {
+    color: #d9b034;
+    font-size: f.rem-calc(v.$font-size-xxsmall);
+	text-align: center;
+	text-shadow: 2px 2px #000;
+    @include q.respond-above(sm) {
+        font-size: f.rem-calc(v.$font-size-small);
+    }
+    @include q.respond-above(md) {
+        font-size: f.rem-calc(v.$font-size-medium);
+    }
+    @include q.respond-above(lg) {
+        font-size: f.rem-calc(v.$font-size-large);
+    }
+}
+
 .footer-nav {
 	height: 0;
 }
