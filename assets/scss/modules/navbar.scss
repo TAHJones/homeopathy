@@ -53,15 +53,15 @@
 }
 
 .navbar.navbar-dark > .navbar-toggler {
-	background-color: rgba(0, 0, 0, 0.3);
-	border: #bd9828 solid 2px;
-	font-size: 1.25rem;
-	padding: 0.3rem 0.75rem;
+	background-color: v.$hamburger-background-color;
+	border: v.$hamburger-border-color solid 2px;
+	font-size: f.rem-calc(20);
+	padding: f.rem-calc(5 12);
 	transition: all .25s ease-in-out;
 }
 
 .navbar.navbar-dark > .navbar-toggler:hover {
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: v.$hamburger-background-color;
 }
 
 /* NAVBAR-END */
