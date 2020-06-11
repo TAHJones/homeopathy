@@ -68,11 +68,11 @@
 }
 
 .back-to-top {
-	bottom: 1.5rem;
-	left: 1.5rem;
+	bottom: 24px;
+	left: 24px;
 	z-index: 1;
 	cursor: pointer;
-	color: #e3b72f;
+	color: v.$floating-button-color;
 	opacity: 0;
 	background-color: transparent;
 	transition: all .25s ease-in-out;
