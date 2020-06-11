@@ -17,11 +17,14 @@
 
 @mixin list-color($color-one, $color-two, $color-three, $color-four) {
     > ul > li {
-        font-size: f.rem-calc(v.$list-font-size-xsmall);
+        font-size: f.rem-calc(v.$list-font-size-xxsmall);
         font-weight: 600;
         list-style: none;
         margin-bottom: f.rem-calc(40);
         text-align: center;
+        @include q.respond-above(xxs) {
+            font-size: f.rem-calc(v.$list-font-size-xsmall);
+        }
         @include q.respond-above(xs) {
             font-size: f.rem-calc(v.$list-font-size-small);
         }
