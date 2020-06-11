@@ -7,9 +7,9 @@
 
 /* CAROUSEL */
 
-.testimonials {
-    height: 250px;
-}
+// .testimonials {
+//     height: 250px;
+// }
 
 .testimonials > h2 {
     margin-bottom: f.rem-calc(0);
@@ -17,19 +17,21 @@
 
 .carousel {
     position: relative;
-    @include q.respond-below(xs) {
-        // display: none;
-    }
 }
 
 .carousel-item > p {
 	color: v.$carousel-font-color;
-	// font-size: f.rem-calc(20);
 	font-style: italic;
 	font-weight: 400;
-	width: 85%;
+	width: 100%;
 	display: block;
 	margin: f.rem-calc(30) auto;
+    @include q.respond-above(xxs) {
+        width: 90%;
+    }
+    @include q.respond-above(xs) {
+        width: 85%;
+    }
 }
 
 .carousel-indicators {
@@ -37,21 +39,29 @@
     @include q.respond-above(xs) {
 	    bottom: -16%;
         display: flex;
-    // padding-bottom: f.rem-calc(20);
     }
-    @include q.respond-above(sm) {
-	    bottom: -16%;
-    }
-    @include q.respond-above(md) {
-	    bottom: -16%;
-    }
-    @include q.respond-above(lg) {
-	    bottom: -16%;
+    // @include q.respond-above(sm) {
+	//     bottom: -16%;
+    // }
+    // @include q.respond-above(md) {
+	//     bottom: -16%;
+    // }
+    // @include q.respond-above(lg) {
+	//     bottom: -16%;
+    // }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+    @include q.respond-above(xxs) {
+        display: block;
+        top: 50%;
     }
 }
 
 .carousel-control-prev {
-	left: -50px;
+	left: -40px;
 }
 
 .carousel-control-next {
