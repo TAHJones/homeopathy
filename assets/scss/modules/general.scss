@@ -29,6 +29,7 @@ h1 {
     font-weight: 600;
     margin-bottom: f.rem-calc(60);
     text-align: center;
+	text-shadow: 2px 2px #000;
     @include q.respond-above(sm) {
         font-size: f.rem-calc(v.$h1-font-size-small);
     }
@@ -39,7 +40,6 @@ h1 {
         font-size: f.rem-calc(v.$h1-font-size-large);
     } 
 }
-
 
 h2 {
     color: v.$secondary-header-color;
