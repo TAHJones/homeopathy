@@ -6,12 +6,12 @@
 
 
 @mixin poster($bg-color, $border-color) {
-        text-shadow: 2px 2px #000;
-    @include q.respond-above(xs) {
+    text-shadow: 2px 2px #000;
+    @include q.respond-above(sm) {
         background-color: $bg-color;
-        border: f.rem-calc(8) solid $border-color;
+        // border: f.rem-calc(8) solid $border-color;
         border-radius: f.rem-calc(6);
-        box-shadow: f.rem-calc(5 5 20 2) #000;
+        // box-shadow: f.rem-calc(5 5 20 2) #000;
     }
 }
 
@@ -22,16 +22,16 @@
         list-style: none;
         margin-bottom: f.rem-calc(40);
         text-align: center;
-        @include q.respond-above(xxs) {
+        @include q.respond-above(xs) {
             font-size: f.rem-calc(v.$list-font-size-xsmall);
         }
-        @include q.respond-above(xs) {
+        @include q.respond-above(sm) {
             font-size: f.rem-calc(v.$list-font-size-small);
         }
-        @include q.respond-above(sm) {
+        @include q.respond-above(md) {
             font-size: f.rem-calc(v.$list-font-size-medium);
         }
-        @include q.respond-above(md) {
+        @include q.respond-above(lg) {
             font-size: f.rem-calc(v.$list-font-size-large);
         }
     }
