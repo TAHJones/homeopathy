@@ -30,13 +30,13 @@ h1 {
     margin-bottom: f.rem-calc(60);
     text-align: center;
 	text-shadow: 2px 2px #000;
-    @include q.respond-above(sm) {
+    @include q.respond-above(md) {
         font-size: f.rem-calc(v.$h1-font-size-small);
     }
-    @include q.respond-above(md) {
+    @include q.respond-above(lg) {
         font-size: f.rem-calc(v.$h1-font-size-medium);
     }
-    @include q.respond-above(lg) {
+    @include q.respond-above(xl) {
         font-size: f.rem-calc(v.$h1-font-size-large);
     } 
 }
@@ -46,16 +46,16 @@ h2 {
     font-weight: 600;
     font-size: f.rem-calc(v.$h2-font-size-xxsmall);
     margin-bottom: f.rem-calc(20);
-    @include q.respond-above(xxs) {
+    @include q.respond-above(xs) {
         font-size: f.rem-calc(v.$h2-font-size-xsmall);
     }
-    @include q.respond-above(sm) {
+    @include q.respond-above(md) {
         font-size: f.rem-calc(v.$h2-font-size-small);
     }
-    @include q.respond-above(md) {
+    @include q.respond-above(lg) {
         font-size: f.rem-calc(v.$h2-font-size-medium);
     }
-    @include q.respond-above(lg) {
+    @include q.respond-above(xl) {
         font-size: f.rem-calc(v.$h2-font-size-large);
     }
 }
@@ -65,13 +65,13 @@ p {
     // font-family: v.$primary-font-stack;
     font-size: f.rem-calc(v.$font-size-xsmall);
     text-align: justify;
-    @include q.respond-above(sm) {
+    @include q.respond-above(md) {
         font-size: f.rem-calc(v.$font-size-small);
     }
-    @include q.respond-above(md) {
+    @include q.respond-above(lg) {
         font-size: f.rem-calc(v.$font-size-medium);
     }
-    @include q.respond-above(lg) {
+    @include q.respond-above(xl) {
         font-size: f.rem-calc(v.$font-size-large);
     }
 }
@@ -87,13 +87,13 @@ a {
 	font-size: f.rem-calc(v.$link-font-size-xsmall);
 	margin-right: f.rem-calc(10);
 	transition: all .25s ease-in-out;
-    @include q.respond-above(sm) {
+    @include q.respond-above(md) {
         font-size: f.rem-calc(v.$link-font-size-small);
     }
-    @include q.respond-above(md) {
+    @include q.respond-above(lg) {
         font-size: f.rem-calc(v.$link-font-size-medium);
     }
-    @include q.respond-above(lg) {
+    @include q.respond-above(xl) {
         font-size: f.rem-calc(v.$link-font-size-large);
     }
 }
