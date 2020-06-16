@@ -10,7 +10,7 @@
 .logo-bg {
 	background-color: v.$tertiary-bg-color;
 	margin-top: f.rem-calc(55);
-    @include q.respond-above(xs) {
+    @include q.respond-above(sm) {
 	    margin-top: f.rem-calc(120);
     }
 }
@@ -29,7 +29,7 @@
 
 .banner > img {
     width: 95%;
-    @include q.respond-above(xs) {
+    @include q.respond-above(sm) {
     width: 98%;
     }
 }
@@ -41,7 +41,7 @@
 .dark-bg {
     background-color: v.$poster-bg-color;
     text-shadow: 2px 2px #000;
-    @include q.respond-above(xs) {
+    @include q.respond-above(sm) {
         background-color: v.$secondary-bg-color;
     }
 }
@@ -49,7 +49,7 @@
 .dark {
     @include m.poster(v.$poster-bg-color, v.$primary-border-color);
     padding: f.rem-calc(20 30 0);
-    @include q.respond-above(xs) {
+    @include q.respond-above(sm) {
         padding: f.rem-calc(60 40);
     }
 }
@@ -62,7 +62,7 @@
 
 .colored-list {
     @include m.list-color(v.$list-color-magenta--light, v.$list-color-red, v.$list-color-yellow, v.$list-color-blue);
-    @include q.respond-above(xs) {
+    @include q.respond-above(sm) {
         @include m.list-color(v.$list-color-magenta, v.$list-color-red, v.$list-color-yellow, v.$list-color-blue);
     }
 }
@@ -87,13 +87,13 @@ footer {
     font-size: f.rem-calc(v.$font-size-xxsmall);
 	text-align: center;
 	text-shadow: 2px 2px #000;
-    @include q.respond-above(sm) {
+    @include q.respond-above(md) {
         font-size: f.rem-calc(v.$font-size-small);
     }
-    @include q.respond-above(md) {
+    @include q.respond-above(lg) {
         font-size: f.rem-calc(v.$font-size-medium);
     }
-    @include q.respond-above(lg) {
+    @include q.respond-above(xl) {
         font-size: f.rem-calc(v.$font-size-large);
     }
 }
@@ -119,12 +119,12 @@ footer {
 
 .card-body {
     padding: f.rem-calc(20);
-    height: 450px;
-    @include q.respond-above(md) {
+    height: 470px;
+    @include q.respond-above(lg) {
         padding: f.rem-calc(30);
         height: 500px;
     }
-    @include q.respond-above(lg) {
+    @include q.respond-above(xl) {
         height: 570px;
     }
 }
@@ -132,10 +132,10 @@ footer {
 .card-body > p {
     color: #76bb85;
     font-size: f.rem-calc(14);
-    @include q.respond-above(md) {
+    @include q.respond-above(lg) {
         font-size: f.rem-calc(16);
     }
-    @include q.respond-above(lg) {
+    @include q.respond-above(xl) {
         font-size: f.rem-calc(18);
     }
 }
@@ -143,6 +143,56 @@ footer {
 .card-body > p > strong{
     color: #d0ac3d;
 }
+
+// .hide {
+//     display: none;
+// }
+
+/*KEYFRAMES*/
+
+// @keyframes fadein{
+//   0%{opacity:0; display: none;}
+//   66%{opacity:0}
+//   100%{opacity:1; display: block;}
+// }
+
+// @-webkit-keyframes fadein{
+//   0%{opacity:0; display: none;}
+//   66%{opacity:0}
+//   100%{opacity:1; display: block;}
+// }
+
+// @keyframes fadeout {
+//   0%{opacity:1; display:block;}
+//   66%{opacity:1}
+//   100%{opacity:0; display: none;}
+// }
+
+// @-webkit-keyframes fadeout {
+//   0%{opacity:1; display:block;}
+//   66%{opacity:1}
+//   100%{opacity:0; display: none;}
+// }
+
+// .fadeout {
+//   animation-name: fadeout;
+//   animation-duration: 1s;
+//   animation-timing-function: ease-out;
+//   animation-delay: 0s;
+//   animation-direction: normal;
+//   animation-fill-mode: forwards;
+//   animation-iteration-count: 1;
+// }
+
+// .fadein {
+//   animation-name: fadein;
+//   animation-duration: 1.5s;
+//   animation-timing-function: ease-in;
+//   animation-delay: 0s;
+//   animation-direction: normal;
+//   animation-fill-mode: forwards;
+//   animation-iteration-count: 1;
+// }
 
 // .img-responsive {
 // 	display: block;
