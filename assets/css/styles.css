@@ -44,7 +44,7 @@ h1 {
 h2 {
   color: #0aaa2d;
   font-weight: 600;
-  font-size: 1.1875rem;
+  font-size: 1.0625rem;
   margin-bottom: 1.25rem;
 }
 @media (min-width: 450px) {
@@ -175,9 +175,7 @@ a:hover {
 @media (min-width: 576px) {
   .dark {
     background-color: rgba(0, 0, 0, 0.6);
-    border: 0.5rem solid #7dab4b;
     border-radius: 0.375rem;
-    box-shadow: 0.3125rem 0.3125rem 1.25rem 0.125rem #000;
   }
 }
 @media (min-width: 576px) {
@@ -341,7 +339,7 @@ footer {
 
 .card-body {
   padding: 1.25rem;
-  height: 450px;
+  height: 470px;
 }
 @media (min-width: 992px) {
   .card-body {
@@ -374,6 +372,7 @@ footer {
   color: #d0ac3d;
 }
 
+/*KEYFRAMES*/
 /* LAYOUT-END */
 /* NAVBAR */
 .navbar {
@@ -451,12 +450,15 @@ footer {
 }
 
 .carousel-item > p {
-  color: #fffaa2;
+  color: #76bb85;
   font-style: italic;
   font-weight: 400;
   width: 100%;
   display: block;
   margin: 1.875rem auto;
+}
+.carousel-item > p > strong {
+  color: #d0ac3d;
 }
 @media (min-width: 450px) {
   .carousel-item > p {
