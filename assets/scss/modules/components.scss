@@ -16,7 +16,7 @@
 	color: #d9b034;
     font-weight: 400;
     padding: f.rem-calc(0 15 15 0);
-    @include q.respond-above(xs) {
+    @include q.respond-above(sm) {
         padding: f.rem-calc(15);
     }
 }
@@ -35,20 +35,20 @@
     &:nth-of-type(1) {
         margin-top: f.rem-calc(20);
     }
-    @include q.respond-above(xs) {
+    @include q.respond-above(sm) {
         &:nth-of-type(1) {
             margin-top: f.rem-calc(0);
         }
     }
     > .nav-link {
         font-size: f.rem-calc(v.$link-font-size-xsmall);
-        @include q.respond-above(sm) {
+        @include q.respond-above(md) {
             font-size: f.rem-calc(v.$link-font-size-small);
         }
-        @include q.respond-above(md) {
+        @include q.respond-above(lg) {
             font-size: f.rem-calc(v.$link-font-size-medium);
         }
-        @include q.respond-above(lg) {
+        @include q.respond-above(xl) {
             font-size: f.rem-calc(v.$link-font-size-large);
         }
     }
@@ -79,23 +79,25 @@
 }
 
 .carousel-item > p {
-	color: v.$carousel-font-color;
+	// color: v.$carousel-font-color;
+	color: #76bb85;
 	font-style: italic;
 	font-weight: 400;
 	width: 100%;
 	display: block;
 	margin: f.rem-calc(30) auto;
-    @include q.respond-above(xxs) {
+    > strong { color: #d0ac3d; }
+    @include q.respond-above(xs) {
         width: 90%;
     }
-    @include q.respond-above(xs) {
+    @include q.respond-above(sm) {
         width: 85%;
     }
 }
 
 .carousel-indicators {
     display: none;
-    @include q.respond-above(xs) {
+    @include q.respond-above(sm) {
 	    bottom: -16%;
         display: flex;
     }
@@ -104,7 +106,7 @@
 .carousel-control-prev,
 .carousel-control-next {
     display: none;
-    @include q.respond-above(xxs) {
+    @include q.respond-above(xs) {
         display: block;
         top: 50%;
     }
