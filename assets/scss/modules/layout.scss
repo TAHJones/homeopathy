@@ -42,10 +42,6 @@
     }
 }
 
-// .dark {
-//     @include m.poster(v.$poster-bg-color, v.$tertiary-header-color);
-// }
-
 .testimonials {
     @include m.poster(v.$poster-bg-color, v.$tertiary-header-color);
     padding: f.rem-calc(20 30 0);
@@ -53,12 +49,6 @@
         padding: f.rem-calc(60 40 76);
     }
 }
-
-// .dark > h2 {
-//     color: v.$tertiary-header-color;
-//     font-weight: 600px;
-//     text-align: center;
-// }
 
 .colored-list {
     @include m.poster(v.$poster-bg-color, v.$tertiary-header-color);
@@ -69,10 +59,6 @@
         @include m.list-color(v.$list-color-magenta, v.$list-color-red, v.$list-color-yellow, v.$list-color-blue);
     }
 }
-
-// .colored-list > h2 {
-//     margin-bottom: f.rem-calc(50);
-// }
 
 .gallery {
     @include m.poster(v.$poster-bg-color);
