@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>Thomas Jones- Homeopathy in Reigate</title>
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/homeopathy.html">Homeopathy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About Thomas</a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>    
+                </ul>
+            </div>  
+        </nav>
+        <div class="container logo-bg">
+            <div class="row">
+                <div class="col-12 logo">
+                    <img class="logo img-responsive" src="assets/images/logo.png" alt="logo for elements of healing">
+                </div>
+            </div>
+        <div>
+    </header>
+    <!--HEADER-END-->
+
+    <!--BANNER-->
+    <section class="container banner-bg">
+        <div class="row justify-content-center">
+            <div class="col-12 banner">
+            <h1 id="title">Thomas Jones BSc LCHE - Classical Homeopath</h1>
+                <img id="bannerImg" class="img-responsive" src="assets/images/homeopathy-montage--large.png" alt="banner for elements of healing">
+            </div>
+        </div>
+    </section>
+    <!--BANNER-END-->
+
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8 image">
+                <form method="POST">
+                    <div class="row">
+                        <div class="form-group col-12 floating-label-form-group controls">
+                            <label>First Name</label>
+                            <input type="text" class="form-control" value="" placeholder="Your first name" name="firstName" id="firstName" required="" data-validation-required-message="Please enter your first name">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group col-12 floating-label-form-group controls">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" placeholder="Your last name" name="lastName" id="lastName" required="" data-validation-required-message="Please enter your last name">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group col-12 floating-label-form-group controls">
+                            <label>Email</label>
+                            <input type="email" class="form-control" placeholder="Your email address" name="email" id="email" required="" data-validation-required-message="Please enter your email address.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <!-- <div class="form-group col-6 floating-label-form-group controls">
+                            <label>Cluster Density - K/mm2</label>
+                            <input type="number" class="form-control" placeholder="Cluster Density" name="clusterDensity" id="clusterDensity" required="" data-validation-required-message="Please enter cluster density.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group col-6 floating-label-form-group controls">
+                            <label>Clusters Passing Filter - %</label>
+                            <input type="number" class="form-control" placeholder="Clusters Passing Filter" name="passFilter" id="passFilter" required="" data-validation-required-message="Please enter clusters passing filter.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group col-6 floating-label-form-group controls">
+                            <label>Q30 Score - %</label>
+                            <input type="number" class="form-control" placeholder="Q30 Score" name="q30" id="q30" required="" data-validation-required-message="Please enter Q30 score.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group col-6 floating-label-form-group controls">
+                            <label for="experiment">Experiment</label>
+                            <select name="experiment" class="form-control" id="experiment">
+                                <option value="Genome">Genome</option>
+                                <option value="Exome">Exome</option>
+                                <option value="Capture">Capture</option>
+                            </select>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group col-6 floating-label-form-group controls">
+                            <label for="chemistry">Chemistry</label>
+                            <select name="chemistry" class="form-control" id="chemistry">
+                                <option value="High300">High300</option>
+                                <option value="Mid300">Mid300</option>
+                                <option value="Mid150">Mid150</option>
+                            </select>
+                            <p class="help-block text-danger"></p>
+                        </div> -->
+                        <div class="form-group col-sm-12 floating-label-form-group controls">
+                            <label>Message</label>
+                            <textarea rows="5" class="form-control" placeholder="Enter your message" name="message" id="message" required="" data-validation-required-message="Please enter any addition information."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <div class="form-group">
+                        <button type="submit" class="btn" id="sendMessageButton">Submit</button>
+                        <!-- <a href="/user/Thomas" class="btn qc-data-btn">Return</a> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!--FOOTER-BANNER-->
+        <div class="footer-copyright">
+            <div id="copyRight">2019 - 2020 © Thomas Jones - All Rights Reserved</div>
+        </div>
+        <!--FOOTER-BANNER-END-->
+
+        <!--FOOTER-NAV-->
+        <div class="footer-nav">
+            <a href="#" id="backToTop" class="back-to-top btn-float active" title="Back to top">
+                <i class="fas fa-chevron-circle-up fa-2x"></i>
+            </a>
+        </div>
+        <!--FOOTER-NAV-END-->
+    </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
