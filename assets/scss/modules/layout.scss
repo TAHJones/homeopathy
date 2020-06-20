@@ -102,6 +102,22 @@
     }
 }
 
+.image {
+    @include m.poster(v.$poster-bg-color, v.$tertiary-header-color);
+}
+
+.image > img {
+	display: block;
+	margin: 0 auto;
+    padding: f.rem-calc(60);
+	width: 100%;
+}
+
+img[src*="assets/images/about-thomas2.jpg"] {
+    border-radius: 10px;
+    width: 70%;
+}
+
 .gallery-inner > .carousel-item > img {
     display: block;
     margin: f.rem-calc(0) auto f.rem-calc(10);
