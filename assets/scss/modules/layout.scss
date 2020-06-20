@@ -7,6 +7,14 @@
 
 /* LAYOUT */
 
+.dark-bg {
+    background-color: v.$poster-bg-color;
+    text-shadow: 2px 2px #000;
+    @include q.respond-above(sm) {
+        background-color: v.$secondary-bg-color;
+    }
+}
+
 .logo-bg {
 	background-color: v.$tertiary-bg-color;
 	margin-top: f.rem-calc(55);
@@ -31,14 +39,6 @@
     width: 95%;
     @include q.respond-above(sm) {
     width: 98%;
-    }
-}
-
-.dark-bg {
-    background-color: v.$poster-bg-color;
-    text-shadow: 2px 2px #000;
-    @include q.respond-above(sm) {
-        background-color: v.$secondary-bg-color;
     }
 }
 
