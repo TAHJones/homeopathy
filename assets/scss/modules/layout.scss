@@ -142,47 +142,6 @@ footer {
 	height: 0;
 }
 
-.card-bg h2 {
-	color: #ffcd37;
-	text-align: center;
-	margin-bottom: f.rem-calc(60);
-}
-
-.card {
-	background-color: rgba(0,0,0,0.6);
-	padding: 5px;
-}
-
-.card-img {
-    margin-bottom: f.rem-calc(20);
-}
-
-.card-body {
-    padding: f.rem-calc(20);
-    height: 470px;
-    @include q.respond-above(lg) {
-        padding: f.rem-calc(30);
-        height: 500px;
-    }
-    @include q.respond-above(xl) {
-        height: 570px;
-    }
-}
-
-.card-body > p {
-    color: #76bb85;
-    font-size: f.rem-calc(14);
-    @include q.respond-above(lg) {
-        font-size: f.rem-calc(16);
-    }
-    @include q.respond-above(xl) {
-        font-size: f.rem-calc(18);
-    }
-}
-
-.card-body > p > strong{
-    color: #d0ac3d;
-}
 
 // .hide {
 //     display: none;
