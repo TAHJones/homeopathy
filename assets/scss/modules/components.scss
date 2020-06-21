@@ -104,14 +104,14 @@
 /* CARD */
 
 .card-bg h2 {
-	color: #ffcd37;
+	color: $tertiary-header-color;
 	text-align: center;
 	margin-bottom: f.rem-calc(60);
 }
 
 .card {
-	background-color: rgba(0,0,0,0.6);
-	padding: 5px;
+	background-color: $card-bg-color;
+	padding: f.rem-calc(5);
 }
 
 .card-img {
@@ -131,7 +131,7 @@
 }
 
 .card-body > p {
-    color: #76bb85;
+    color: $card-font-color;
     font-size: f.rem-calc(14);
     @include q.respond-above(lg) {
         font-size: f.rem-calc(16);
@@ -142,7 +142,7 @@
 }
 
 .card-body > p > strong{
-    color: #d0ac3d;
+    color: $card-strong-font-color;
 }
 
 /* CARD-END */
@@ -179,3 +179,31 @@
 }
 
 /* FLOATING-BUTTON-END */
+
+/* FORM */
+
+.form-control {
+	height: 50px;
+	color: #495057;
+	background-color: #f7f4cb;
+}
+
+.form-group > label {
+    color: v.$form-label-color;
+    margin-bottom: f.rem-calc(12);
+}
+
+.btn {
+    background-color: v.$form-btn-color;
+    opacity: 0.9;
+    font-weight: 600;
+}
+
+.btn:hover {
+    opacity: 1;
+    transition: all 0.25s ease-in-out;
+}
+
+
+
+/* FORM-END */
