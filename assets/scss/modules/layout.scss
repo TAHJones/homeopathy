@@ -103,7 +103,7 @@
 }
 
 .image {
-    @include m.poster(v.$poster-bg-color, v.$tertiary-header-color);
+    @include m.poster(v.$poster-bg-color);
 }
 
 .image > img {
@@ -113,9 +113,9 @@
 	width: 100%;
 }
 
-img[src*="assets/images/about-thomas2.jpg"] {
-    border-radius: 10px;
-    width: 70%;
+img[src*="assets/images/thomas.jpg"] {
+    border-radius: f.rem-calc(10);
+    width: 90%;
 }
 
 .gallery-inner > .carousel-item > img {
@@ -125,6 +125,11 @@ img[src*="assets/images/about-thomas2.jpg"] {
     @include q.respond-above(md) {
         width: 70%;
     }
+}
+
+.form {
+    @include m.poster(v.$poster-bg-color);
+    padding: f.rem-calc(30 50);
 }
 
 footer {
@@ -157,63 +162,5 @@ footer {
 .footer-nav {
 	height: 0;
 }
-
-
-// .hide {
-//     display: none;
-// }
-
-/*KEYFRAMES*/
-
-// @keyframes fadein{
-//   0%{opacity:0; display: none;}
-//   66%{opacity:0}
-//   100%{opacity:1; display: block;}
-// }
-
-// @-webkit-keyframes fadein{
-//   0%{opacity:0; display: none;}
-//   66%{opacity:0}
-//   100%{opacity:1; display: block;}
-// }
-
-// @keyframes fadeout {
-//   0%{opacity:1; display:block;}
-//   66%{opacity:1}
-//   100%{opacity:0; display: none;}
-// }
-
-// @-webkit-keyframes fadeout {
-//   0%{opacity:1; display:block;}
-//   66%{opacity:1}
-//   100%{opacity:0; display: none;}
-// }
-
-// .fadeout {
-//   animation-name: fadeout;
-//   animation-duration: 1s;
-//   animation-timing-function: ease-out;
-//   animation-delay: 0s;
-//   animation-direction: normal;
-//   animation-fill-mode: forwards;
-//   animation-iteration-count: 1;
-// }
-
-// .fadein {
-//   animation-name: fadein;
-//   animation-duration: 1.5s;
-//   animation-timing-function: ease-in;
-//   animation-delay: 0s;
-//   animation-direction: normal;
-//   animation-fill-mode: forwards;
-//   animation-iteration-count: 1;
-// }
-
-// .img-responsive {
-// 	display: block;
-// 	margin: 0 auto;
-// 	padding: 0;
-// 	width: 100%;
-// }
 
 /* LAYOUT-END */
