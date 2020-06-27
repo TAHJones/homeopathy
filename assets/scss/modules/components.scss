@@ -104,13 +104,13 @@
 /* CARD */
 
 .card-bg h2 {
-	color: $tertiary-header-color;
+	color: v.$tertiary-header-color;
 	text-align: center;
 	margin-bottom: f.rem-calc(60);
 }
 
 .card {
-	background-color: $card-bg-color;
+	background-color: v.$card-bg-color;
 	padding: f.rem-calc(5);
 }
 
@@ -131,7 +131,7 @@
 }
 
 .card-body > p {
-    color: $card-font-color;
+    color: v.$card-font-color;
     font-size: f.rem-calc(14);
     @include q.respond-above(lg) {
         font-size: f.rem-calc(16);
@@ -142,7 +142,7 @@
 }
 
 .card-body > p > strong{
-    color: $card-strong-font-color;
+    color: v.$card-strong-font-color;
 }
 
 /* CARD-END */
